@@ -1,6 +1,6 @@
 # Meu Portfólio Pessoal
 
-Este é o meu portfólio pessoal, construído para demonstrar minhas habilidades e projetos como Analista de Telecomunicações e estudante de Engenharia de Software.
+Este é o meu portfólio pessoal, construído para demonstrar minhas habilidades e projetos como estudante de Engenharia de Software.
 
 ## Sobre o Projeto
 
