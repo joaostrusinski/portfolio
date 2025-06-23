@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - João Strusinski</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>João Pedro Strusinski Chagas</h1>
+            <p>Analista de Telecomunicações & Estudante de Engenharia de Software</p>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#aprendendo">O que Estou Aprendendo</a></li>
+                    <li><a href="#planos">O que Planejo Construir</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="section-content">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <p>Olá :) Eu sou o João, e pra mim a vida é sobre conectar as coisas. Literalmente! Minha história começou nas telecomunicações, onde eu ajudava a garantir que ninguém ficasse sem sinal. Com o tempo, percebi que a forma como nos conectamos está cada vez mais digital, e foi aí que a Engenharia de Software entrou na minha vida. Estou mergulhando de cabeça pra aprender a construir essas pontes invisíveis que nos ligam. Minha experiência em infraestrutura me dá uma visão única pra criar soluções que realmente fazem sentido, do início ao fim. Adoraria conversar sobre como podemos conectar mais ideias e projetos!</p>
+                <p>Estou em busca de aprendizado contínuo, sempre explorando novas ferramentas e conceitos para me desenvolver como profissional.</p>
+            </div>
+        </section>
+
+        <section id="aprendendo" class="section-content">
+            <div class="container">
+                <h2>O que Estou Aprendendo</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>Fundamentos Web</h3>
+                        <ul>
+                            <li>HTML5 (Estruturação de Páginas)</li>
+                            <li>CSS3 (Estilização e Responsividade)</li>
+                            <li>JavaScript (Lógica e Interatividade)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Programação</h3>
+                        <ul>
+                            <li>Python (Para automação e scripts)</li>
+                            <li>Lógica de Programação</li>
+                            <li>Estrutura de Dados</li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Redes & DevOps</h3>
+                        <ul>
+                            <li>Conceitos de Redes (TCP/IP, Roteamento, Switching)</li>
+                            <li>Introdução a Automação de Redes</li>
+                            <li>Princípios de DevOps/NetDevOps</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Estou focado(a) em construir uma base sólida nessas áreas para aplicar em projetos futuros e desafios do mundo real.</p>
+            </div>
+        </section>
+
+        <section id="planos" class="section-content">
+            <div class="container">
+                <h2>O que Planejo Construir</h2>
+                <ul>
+                    <li>Projeto de Automação de Rede: Um script Python para automatizar a configuração básica de dispositivos de rede, usando bibliotecas como Netmiko.</li>
+                    <li>Aplicação Web Simples: Desenvolver uma pequena aplicação web utilizando JavaScript para interagir com dados de rede (ex: monitoramento básico).</li>
+                    <li>Estudo de Caso NetDevOps: Aplicar conceitos de Infraestrutura como Código (IaC) para provisionar uma pequena topologia de rede virtual.</li>
+                    <li>Refatorar este Portfólio: Continuar melhorando este site, adicionando mais interatividade e talvez conectando-o a alguma API.</li>
+                </ul>
+                <p>Estou animado(a) para transformar essas ideias em realidade e compartilhar meu progresso!</p>
+            </div>
+        </section>
+
+        <section id="contato" class="section-content">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Você pode me encontrar e se conectar comigo através dos seguintes canais:</p>
+                <ul>
+                    <li>Email: <a href="mailto:seu.email@example.com">joaopedrostrusinski@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/seuperfil" target="_blank">www.linkedin.com/in/joao-pedro-strusinski-chagas</a></li>
+                    <li>GitHub: <a href="https://github.com/seugithub" target="_blank">https://github.com/joaostrusinski</a></li>
+                </ul>
+                <p>Fique à vontade para entrar em contato para discutir tecnologia, redes ou oportunidades!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> João Pedro Strusinski Chagas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+/* style.css - Minimalista e Clean - Completo (sem estilos de currículo) */
+
+/* --- Variáveis CSS (Cores e Fontes) --- */
+:root {
+    --primary-color: #3498db; /* Azul suave para detalhes */
+    --secondary-color: #2c3e50; /* Azul escuro para textos principais */
+    --text-color: #555; /* Cinza médio para textos gerais */
+    --light-bg: #f8f8f8; /* Fundo muito claro */
+    --white: #ffffff;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+/* --- Reset Básico e Estilos Globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.7; /* Mais espaçamento entre linhas */
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    -webkit-font-smoothing: antialiased; /* Suaviza fontes no Chrome/Safari */
+    text-rendering: optimizeLegibility; /* Otimiza a renderização de texto */
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9; /* Um tom mais escuro do azul ao passar o mouse */
+}
+
+.container {
+    width: 90%; /* Mantém uma boa largura */
+    max-width: 960px; /* Limita para não ficar muito largo em telas grandes */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: var(--white);
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* Sombra muito suave */
+    margin-bottom: 30px; /* Espaço abaixo do header */
+}
+
+.main-header h1 {
+    font-family: var(--font-heading);
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.main-header p {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav ul li {
+    display: inline-block; /* Alinha os itens da navegação */
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--secondary-color);
+    padding: 5px 0;
+    position: relative; /* Para a animação da linha inferior */
+}
+
+.main-nav ul li a::after { /* Linha inferior para hover */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease-in-out;
+}
+
+.main-nav ul li a:hover::after,
+.main-nav ul li a.active::after { /* A linha aparece no hover e no item ativo */
+    width: 100%;
+}
+
+
+/* --- Seções de Conteúdo --- */
+.section-content {
+    background-color: var(--white); /* Fundo branco para as seções */
+    padding: 60px 0; /* Espaçamento interno grande nas seções (vertical) */
+    margin-bottom: 30px; /* Espaço entre as seções */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* Sombra suave */
+    border-radius: 8px; /* Cantos arredondados suaves */
+}
+
+.section-content h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 40px; /* Mais espaço abaixo do título */
+    position: relative;
+}
+
+.section-content h2::after { /* Linha decorativa abaixo do título */
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px; /* Posição da linha */
+    border-radius: 2px;
+}
+
+.section-content p {
+    font-size: 1.1em;
+    line-height: 1.8; /* Mais espaçamento entre linhas nos parágrafos */
+    margin-bottom: 1.5em; /* Mais espaço abaixo do parágrafo */
+    text-align: justify; /* Justifica o texto para um visual mais limpo */
+}
+
+.section-content ul {
+    list-style: none; /* Remove marcadores padrão */
+    margin-bottom: 1.5em;
+}
+
+.section-content ul li {
+    margin-bottom: 0.8em;
+    position: relative;
+    padding-left: 20px; /* Espaço para o ícone customizado */
+}
+
+.section-content ul li::before { /* Marcador de lista customizado */
+    content: '•'; /* Um ponto simples */
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+/* --- Skills Grid (Habilidades) --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas mais flexíveis */
+    gap: 30px; /* Mais espaço entre os itens */
+    margin-top: 40px;
+}
+
+.skill-item {
+    background-color: var(--light-bg); /* Fundo mais claro para os itens */
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05); /* Sombra bem suave */
+    border: 1px solid #eee; /* Borda bem fina para definir o limite */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px); /* Efeito suave ao passar o mouse */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra mais visível no hover */
+}
+
+.skill-item h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.skill-item ul {
+    list-style: none; /* Remove marcadores padrão dentro do skill-item */
+    text-align: left; /* Alinha o texto da lista à esquerda */
+    margin-bottom: 0; /* Remove margem inferior da lista no item */
+}
+
+.skill-item ul li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 15px;
+    font-size: 0.95em;
+    color: var(--text-color);
+}
+
+.skill-item ul li::before { /* Marcador de lista customizado para skills */
+    content: '•';
+    color: var(--secondary-color); /* Outra cor para o marcador */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+/* --- Responsividade Básica --- */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2.5em;
+    }
+    .main-header p {
+        font-size: 1em;
+    }
+    .main-nav ul li {
+        margin: 0 8px;
+    }
+    .main-nav ul li a {
+        font-size: 0.9em;
+    }
+    .section-content {
+        padding: 40px 0;
+    }
+    .section-content h2 {
+        font-size: 2em;
+    }
+    .section-content p {
+        font-size: 1em;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+    .skill-item {
+        margin-bottom: 20px;
+    }
+}
